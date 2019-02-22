@@ -19,5 +19,7 @@ export default {
   }
   
   /* Custom CSS */
-  /* ... */
+  body {
+    background-color: #0e94e6;
+  }
 </style>

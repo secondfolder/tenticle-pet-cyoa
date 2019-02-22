@@ -247,5 +247,21 @@
   }
   
   /* Custom CSS */
-  /* ... */
+  .deckInfo {
+    background-color: #99d8ff;
+    padding: 0 0.2em;
+  }
+  .title {
+    background-color: #99d8ff;
+    padding: 0.1em 0.3em 0;
+  }
+  .description {
+    background-color: #99d8ff;
+    padding: 1em;
+    text-align: center;
+  }
+  .imgSource {
+    color: #234d67;
+    align-self: center;
+  }
 </style>

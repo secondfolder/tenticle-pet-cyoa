@@ -139,5 +139,7 @@
   }
   
   /* Custom CSS */
-  /* ... */
+  .choice {
+    background-color: #99d8ff;
+  }
 </style>
