@@ -106,8 +106,9 @@
     {
       "title": "Intelligence",
       "id": 119,
-      "description": "How smart is your pet? Choose one option.",
-      "maxSelectable": "1",
+      "description": "How smart is your pet?",
+      "maxSelectable": 1,
+      "minSelectable": 1,
       "contains": [
         {
           "title": "Tentacle Monster",
@@ -158,8 +159,9 @@
     {
       "title": "Body Type",
       "id": 120,
-      "description": "Now you need to decide what type of body your pet has. This only determines its general shape, the specific details are up to you.<br>Your pet can generate tentacles from any part of its body, regardless of which type you pick.<br>Choose one option.",
-      "maxSelectable": "1",
+      "description": "Now you need to decide what type of body your pet has. This only determines its general shape, the specific details are up to you.<br>Your pet can generate tentacles from any part of its body, regardless of which type you pick.",
+      "maxSelectable": 1,
+      "minSelectable": 1,
       "contains": [
         {
           "title": "Blob",
@@ -298,8 +300,8 @@
     {
       "title": "Body Size",
       "id": 121,
-      "description": "You've picked the body type, but how large is it?<br>Choose one option.<br>(Skip this section if your pet is a Room or Symbiote.)",
-      "maxSelectable": "1",
+      "description": "You've picked the body type, but how large is it?<br><br><strong>(Skip this section if your pet is a Room or Symbiote.)</strong>",
+      "maxSelectable": 1,
       "contains": [
         {
           "title": "Tiny",
@@ -1090,8 +1092,8 @@
           "description": "<b>Medium Pay</b><br><br>Some people aren't ready for the committment of a pet. But they'll gladly pay for a night with one.<br><br>You can 'rent' your pet to clients of your choosing. You'll be payed more if you participate as well.",
           "img": "prostitute.jpg",
           "imgSource": "http://www.hentai-foundry.com/pictures/user/iri-neko/331540/The-Queens-New-Dish",
-          "maxSelectable": 1,
-          "cost": 0
+          "cost": 0,
+          "maxSelecftable": 1
         },
         {
           "title": "Milk Donor",

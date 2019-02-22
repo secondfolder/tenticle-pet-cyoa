@@ -22,12 +22,14 @@
           v{{ groupData.version }}
         </span>
       </p>
-      <p
-        v-if="selectionRequirementsMsg" 
-        :class="['selectionRequirements', {selectionRequirementsMet}]" 
-        v-html="selectionRequirementsMsg"
-      ></p>
-      <p class="description" v-if="groupData.description" v-html="groupData.description"></p>
+      <div class="description">
+        <p v-if="groupData.description" v-html="groupData.description"></p>
+        <p
+          v-if="selectionRequirementsMsg" 
+          :class="['selectionRequirements', {selectionRequirementsMet}]" 
+          v-html="selectionRequirementsMsg"
+        ></p>
+      </div>
       <div v-if="groupData.img" class="image">
         <img :src="this.getAssetUrl(groupData.img)">
       </div>
