@@ -160,7 +160,6 @@
       "title": "Body Type",
       "id": 120,
       "description": "Now you need to decide what type of body your pet has. This only determines its general shape, the specific details are up to you.<br>Your pet can generate tentacles from any part of its body, regardless of which type you pick.",
-      "maxSelectable": 1,
       "minSelectable": 1,
       "contains": [
         {
