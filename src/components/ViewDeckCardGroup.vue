@@ -266,4 +266,7 @@
     color: #234d67;
     align-self: center;
   }
+  .groupHeader {
+    text-align: center;
+  }
 </style>
