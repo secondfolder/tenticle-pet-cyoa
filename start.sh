@@ -8,7 +8,10 @@ if [ "$NODE_ENV" = "production" ]; then
     rimraf dist
     npm run build; 
   fi;
+  echo FIRECAKE$inGlitch
   if [ "$inGlitch" = "true" ]; then
+    echo BLAR${APP_TYPES_DIR}
+    cd dist
     ${APP_TYPES_DIR}/static/start.sh
   fi;
 else
