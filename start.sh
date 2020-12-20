@@ -10,9 +10,7 @@ if [ "$NODE_ENV" = "production" ]; then
   fi;
   echo FIRECAKE$inGlitch
   if [ "$inGlitch" = "true" ]; then
-    echo BLAR${APP_TYPES_DIR}
-    cd dist
-    ${APP_TYPES_DIR}/static/start.sh
+    exec http-server dist --gzip --proxy http://localhost:${PORT}?
   fi;
 else
   rimraf dist
