@@ -13,12 +13,19 @@
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js"
   },
-  "scripts": {
+  "scriptss": {
     "start": "vite",
     "build": "vite build",
     "serve": "vite preview"
   },
+  "scripts": {
+    "start": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "build": "node build/build.js",
+    "serve": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js"
+  },
   "dependencies": {
+    "vite": "^2.1.5",
+    "vite-plugin-vue2": "^1.5.2",
     "@babel/polyfill": "^7.2.5",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
@@ -28,9 +35,7 @@
     "vue-router": "^3.0.2",
     "vuedraggable": "^2.17.0",
     "vuex": "^3.1.0",
-    "http-server": "^0.12.3"
-  },
-  "devDependencies": {
+    "http-server": "^0.12.3",
     "@babel/core": "^7.2.2",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/plugin-syntax-jsx": "^7.2.0",
