@@ -4,7 +4,7 @@
   "description": "A web app for making deck-building style interactive choose your own adventures",
   "author": "Callum Gare <callum@gare.com.au>",
   "repository": "github:callumgare/choice-assist",
-  "scripts": {
+  "scriptsd": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "./start.sh",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
@@ -12,6 +12,11 @@
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
@@ -97,5 +102,8 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "glitch": {
+    "projectType": "generated_static"
+  }
 }
