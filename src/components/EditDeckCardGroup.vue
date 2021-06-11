@@ -68,8 +68,8 @@
 </template>
 
 <script lang="js">
-  import EditDeckCardChoice from '@/components/EditDeckCardChoice.vue'
-  import deckMixin from '@/mixins/deck'
+  import EditDeckCardChoice from 'src/components/EditDeckCardChoice.vue'
+  import deckMixin from 'src/mixins/deck'
   export default {
     name: 'edit-deck-card-group',
     props: ['groupData', 'level'],

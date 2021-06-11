@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '@/pages/Index'
-import Share from '@/pages/Share'
-import Editor from '@/pages/Editor'
-import Source from '@/pages/Source'
-import DataDebug from '@/pages/DataDebug'
+import Index from '../pages/Index'
+import Share from '../pages/Share'
+import Editor from '../pages/Editor'
+import Source from '../pages/Source'
+import DataDebug from '../pages/DataDebug'
 
 Vue.use(Router)
 

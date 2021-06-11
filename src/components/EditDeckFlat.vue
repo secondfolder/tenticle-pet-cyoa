@@ -49,7 +49,7 @@
 
 <script lang="js">
   import draggable from 'vuedraggable'
-  import deckMixin from '@/mixins/deck'
+  import deckMixin from 'src/mixins/deck'
   export default {
     name: 'edit-deck-flat',
     mixins: [deckMixin],

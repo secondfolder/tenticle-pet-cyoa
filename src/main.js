@@ -6,7 +6,7 @@ import router from './router'
 import AsyncComputed from 'vue-async-computed'
 import VueClipboard from 'vue-clipboard2'
 
-import deckData from '@/deckData.json'
+import deckData from 'src/deckData.json'
 
 const localStorageDraftKey = 'unsavedDeckData'
 

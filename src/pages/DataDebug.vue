@@ -83,7 +83,7 @@
 </template>
 
 <script>
-import deck from '@/mixins/deck'
+import deck from 'src/mixins/deck'
 export default {
   name: 'DataDebug',
   mixins: [deck],

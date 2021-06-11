@@ -61,7 +61,7 @@
 </template>
 
 <script lang="js">
-  import deckMixin from '@/mixins/deck'
+  import deckMixin from 'src/mixins/deck'
   
   export default {
     name: 'view-deck-flat',

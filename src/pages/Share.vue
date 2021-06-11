@@ -54,10 +54,10 @@
 </template>
 
 <script>
-import ViewDeckCardGroup from '@/components/ViewDeckCardGroup.vue'
-import ViewDeckFlat from '@/components/ViewDeckFlat.vue'
-import ModalBox from '@/components/ModalBox.vue'
-import deckMixin from '@/mixins/deck'
+import ViewDeckCardGroup from 'src/components/ViewDeckCardGroup.vue'
+import ViewDeckFlat from 'src/components/ViewDeckFlat.vue'
+import ModalBox from 'src/components/ModalBox.vue'
+import deckMixin from 'src/mixins/deck'
 export default {
   name: 'Share',
   props: ['hash'],
