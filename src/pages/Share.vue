@@ -54,10 +54,12 @@
 </template>
 
 <script>
-import ViewDeckCardGroup from 'src/components/ViewDeckCardGroup.vue'
-import ViewDeckFlat from 'src/components/ViewDeckFlat.vue'
-import ModalBox from 'src/components/ModalBox.vue'
-import deckMixin from 'src/mixins/deck'
+import { toClipboard } from '@soerenmartius/vue3-clipboard'
+
+import ViewDeckCardGroup from '../components/ViewDeckCardGroup.vue'
+import ViewDeckFlat from '../components/ViewDeckFlat.vue'
+import ModalBox from '../components/ModalBox.vue'
+import deckMixin from '../mixins/deck'
 export default {
   name: 'Share',
   props: ['hash'],
@@ -91,7 +93,7 @@ export default {
       this.$router.push({name: 'Index'})
     },
     copyUrl () {
-      this.$copyText(this.shareUrl).then(function (e) {
+      toClipboard(this.shareUrl).then(function (e) {
         alert('Copied')
         console.log(e)
       }, function (e) {

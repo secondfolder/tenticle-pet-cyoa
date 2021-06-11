@@ -60,9 +60,9 @@
 </template>
 
 <script>
-import EditDeckCardGroup from 'src/components/EditDeckCardGroup.vue'
-import EditDeckFlat from 'src/components/EditDeckFlat.vue'
-import deckMixin from 'src/mixins/deck'
+import EditDeckCardGroup from '../components/EditDeckCardGroup.vue'
+import EditDeckFlat from '../components/EditDeckFlat.vue'
+import deckMixin from '../mixins/deck'
 export default {
   name: 'Index',
   mixins: [deckMixin],

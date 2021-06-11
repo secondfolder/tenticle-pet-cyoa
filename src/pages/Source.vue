@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import deckMixin from 'src/mixins/deck'
+import deckMixin from '..mixins/deck'
 export default {
   name: 'Source',
   mixins: [deckMixin],

@@ -1,8 +1,11 @@
 dependencies:
+  '@soerenmartius/vue3-clipboard': 0.1.2
   '@vitejs/plugin-vue': 1.2.3
   '@vue/compiler-sfc': 3.1.1
   vite: 2.3.7
   vue: 3.1.1
+  vue-async-computed: 3.9.0
+  vue-router: 4.0.8
 packages:
   /@babel/helper-validator-identifier/7.14.5:
     dev: false
@@ -26,6 +29,12 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-M/NzBpEL95I5Hh4dwhin5JlE7EzO5PHMAuzjxss3tiOBD46KfQvVedN/3jEPZvdRvtsK2222XfdHogNIttFgcg==
+  /@soerenmartius/vue3-clipboard/0.1.2:
+    dependencies:
+      clipboard: 2.0.8
+    dev: false
+    resolution:
+      integrity: sha512-a5er6cFGcFIQ/3qg6kWvU0yFqIz9iWoQGEVs9azjevyRyMAKvj1w3JuLH9y6+u0WhMNby3kn7nuR8nktSnDesg==
   /@vitejs/plugin-vue/1.2.3:
     dev: false
     engines:
@@ -81,6 +90,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-7H6krZtVt3h/YzfNp7eYK41hMDz8ZskiBy+Wby+EDRINX6BD9JQ5C8zyy2xAa7T6Iz2VrQzsaJ/Bb52lTPSS5A==
+  /@vue/devtools-api/6.0.0-beta.14:
+    dev: false
+    resolution:
+      integrity: sha512-44fPrrN1cqcs6bFkT0C+yxTM6PZXLbR+ESh1U1j8UD22yO04gXvxH62HApMjLbS3WqJO/iCNC+CYT+evPQh2EQ==
   /@vue/reactivity/3.1.1:
     dependencies:
       '@vue/shared': 3.1.1
@@ -114,6 +127,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
+  /clipboard/2.0.8:
+    dependencies:
+      good-listener: 1.2.2
+      select: 1.1.2
+      tiny-emitter: 2.1.0
+    dev: false
+    resolution:
+      integrity: sha512-Y6WO0unAIQp5bLmk1zdThRhgJt/x3ks6f30s3oE3H1mgIEU33XyQjEf8gsf6DxC7NPX8Y1SsNWjUjL/ywLnnbQ==
   /colorette/1.2.2:
     dev: false
     resolution:
@@ -137,6 +158,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-u1wmTI1jJGzCJzWndZo8mk4wnPTZd1eOIYTYvuEyOQGfmDl3TrabCCfKnOC86FZwW/9djqTl933UF/cS425i9A==
+  /delegate/3.2.0:
+    dev: false
+    resolution:
+      integrity: sha512-IofjkYBZaZivn0V8nnsMJGBr4jVLxHDheKSW88PyxS5QC4Vo9ZbZVvhzlSxY87fVq3STR6r+4cGepyHkcWOQSw==
   /emojis-list/3.0.0:
     dev: false
     engines:
@@ -172,6 +197,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-kPCHWa1m9wGG/OwQpeweTwM/PYiQLrUIxXbt/P4Nic3LbGjCP0YwrALHW1uNLKZ0LIMg+RF+XRlj2ekT9ZlZAQ==
+  /good-listener/1.2.2:
+    dependencies:
+      delegate: 3.2.0
+    dev: false
+    resolution:
+      integrity: sha1-1TswzfkxPf+33JoNR3CWqm0UXFA=
   /has/1.0.3:
     dependencies:
       function-bind: 1.1.1
@@ -364,6 +395,10 @@ packages:
       fsevents: 2.3.2
     resolution:
       integrity: sha512-ReV2eGEadA7hmXSzjxdDKs10neqH2QURf2RxJ6ayAlq93ugy6qIvXMmbc5cWMGCDh1h5T4thuWO1e2VNbMq8FA==
+  /select/1.1.2:
+    dev: false
+    resolution:
+      integrity: sha1-DnNQrN7ICxEIUoeG7B1EGNEbOW0=
   /source-map-js/0.6.2:
     dev: false
     engines:
@@ -384,6 +419,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-6Kr8CsGFW0Zmkp7X3RJ1311sgRs=
+  /tiny-emitter/2.1.0:
+    dev: false
+    resolution:
+      integrity: sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==
   /to-fast-properties/2.0.0:
     dev: false
     engines:
@@ -408,6 +447,20 @@ packages:
       fsevents: 2.3.2
     resolution:
       integrity: sha512-Y0xRz11MPYu/EAvzN94+FsOZHbSvO6FUvHv127CyG7mV6oDoay2bw+g5y9wW3Blf8OY3chaz3nc/DcRe1IQ3Nw==
+  /vue-async-computed/3.9.0:
+    dev: false
+    peerDependencies:
+      vue: ~2
+    resolution:
+      integrity: sha512-ac6m/9zxHHNGGKNOU1en8qNk+fAmEbJLuWL7qyQTFuH3vjv3V4urv//QHcVzCobROM6btnaDG2b+XYMncF/ETA==
+  /vue-router/4.0.8:
+    dependencies:
+      '@vue/devtools-api': 6.0.0-beta.14
+    dev: false
+    peerDependencies:
+      vue: ^3.0.0
+    resolution:
+      integrity: sha512-42mWSQaH7CCBQDspQTHv63f34VEnZC20g9QNK4WJ/zW8SdIUeT6TQ2i/78fjF/pVBUPLBWrGhvB7uDnaz7O/pA==
   /vue/3.1.1:
     dependencies:
       '@vue/compiler-dom': 3.1.1
@@ -424,7 +477,10 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
+  '@soerenmartius/vue3-clipboard': ^0.1.1
   '@vitejs/plugin-vue': ^1.1.5
   '@vue/compiler-sfc': ^3.0.5
   vite: ^2.1.3
   vue: ^3.1.1
+  vue-async-computed: ^3.9.0
+  vue-router: ^4.0.8

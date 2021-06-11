@@ -69,7 +69,7 @@
 
 <script lang="js">
   import EditDeckCardChoice from 'src/components/EditDeckCardChoice.vue'
-  import deckMixin from 'src/mixins/deck'
+  import deckMixin from '../mixins/deck'
   export default {
     name: 'edit-deck-card-group',
     props: ['groupData', 'level'],

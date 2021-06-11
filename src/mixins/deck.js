@@ -1,7 +1,7 @@
 
-import deckRead from 'src/mixins/deckRead'
-import deckHelpers from 'src/mixins/deckHelpers'
-import deckValidation from 'src/mixins/deckValidation'
+import deckRead from './deckRead'
+import deckHelpers from './deckHelpers'
+import deckValidation from './deckValidation'
 
 export default {
   mixins: [deckRead, deckHelpers, deckValidation],
