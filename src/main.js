@@ -3,13 +3,13 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import AsyncComputed from 'vue-async-computed'
+// import AsyncComputed from 'vue-async-computed'
 
 
 
 const app = createApp(App)
 
 app.use(router)
-app.use(AsyncComputed)
+// app.use(AsyncComputed)
 
 app.mount('#app')

@@ -1,6 +1,6 @@
 var glitchAssets
 try {
-  if (process.env.ISGLITCH) {
+  if (process.env.PROJECT_NAME) {
     glitchAssets = require('raw-loader!@/../.glitch-assets') // eslint-disable-line import/no-webpack-loader-syntax
     glitchAssets = glitchAssets.split('\n').map(asset => {
       try {

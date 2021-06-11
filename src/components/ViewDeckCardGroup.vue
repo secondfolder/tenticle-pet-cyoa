@@ -31,7 +31,7 @@
         ></p>
       </div>
       <div v-if="groupData.img" class="image">
-        <img :src="this.getAssetUrl(groupData.img)">
+        <img :src="getAssetUrl(groupData.img)">
       </div>
       <a v-if="groupData.imgSource" class="imgSource" :href="groupData.imgSource" @click.stop target="_blank">
         Image Source

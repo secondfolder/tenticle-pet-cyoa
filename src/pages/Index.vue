@@ -22,7 +22,7 @@
           Remaining Points: {{ remaining }}
         </span>
         <span class="budget">
-          Budget: {{this.deckData.budget}}
+          Budget: {{deckData.budget}}
         </span>
       </div>
       <div v-if="$root.deckDataModified" >
@@ -47,7 +47,7 @@
       <div>
         <button 
           @click="toggleView"
-          v-text="(this.view === 'card' ? 'Flat' : 'Card') + ' View'"
+          v-text="(view === 'card' ? 'Flat' : 'Card') + ' View'"
         />
         <button
           :disabled="!!changeRequiredMsg" 
