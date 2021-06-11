@@ -1,6 +1,6 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import AsyncComputed from 'vue-async-computed'
@@ -9,13 +9,8 @@ import deckData from './deckData.json'
 
 const localStorageDraftKey = 'unsavedDeckData'
 
-Vue.config.productionTip = false
 
-Vue.use(AsyncComputed)
-
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
+const app = createApp({
   data () {
     return {
       deckData: this.loadDraft() || this.getDeckFromSource(),
@@ -52,7 +47,10 @@ new Vue({
       },
       deep: true
     }
-  },
-  router,
-  render: h => h(App)
+  }
 })
+
+app.use(router)
+app.use(AsyncComputed)
+
+app.mount('#app')
