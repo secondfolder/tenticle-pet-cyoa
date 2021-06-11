@@ -35,10 +35,10 @@
     <footer>
       <div>
         <button @click="toggleHideNotSelected">
-          {{this.hideNotSelected ? 'Show' : 'Hide'}} Unchosen
+          {{hideNotSelected ? 'Show' : 'Hide'}} Unchosen
         </button>
         <button @click="toggleView">
-          {{this.view === 'card' ? 'Flat' : 'Card'}} View
+          {{view === 'card' ? 'Flat' : 'Card'}} View
         </button>
         <button @click="editChoices">
           Edit Choices

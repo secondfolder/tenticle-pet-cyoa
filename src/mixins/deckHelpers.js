@@ -1,6 +1,5 @@
-import glitchAssets from '../../.glitch-assets'
-console.log(glitchAssets)
-glitchAssets = glitchAssets.split('\n').map(asset => {
+import glitchAssetsRaw from '../../.glitch-assets?raw'
+const glitchAssets = glitchAssetsRaw.split('\n').map(asset => {
   try {
     return JSON.parse(asset)
   } catch (e) {
