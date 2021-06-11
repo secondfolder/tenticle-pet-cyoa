@@ -125,3 +125,7 @@
 {"uuid":"adSBq97hhhpFNUnb","deleted":true}
 {"uuid":"adSBq97hhhpFNUnc","deleted":true}
 {"name":"slime.jpg","date":"2017-12-04T10:09:20.765Z","url":"https://cdn.glitch.com/be626a4b-4592-40d2-8a6e-743d06d3e70f%2Fslime.jpg","type":"image/jpeg","size":78684,"imageWidth":300,"imageHeight":214,"thumbnail":"https://cdn.glitch.com/be626a4b-4592-40d2-8a6e-743d06d3e70f%2Fslime.jpg","thumbnailWidth":300,"thumbnailHeight":214,"dominantColor":"rgb(119,222,250)","uuid":"SeIm8gFsBLE38zob"}
+{"name":"favicon.ico","date":"2021-06-11T13:11:48.802Z","url":"https://cdn.glitch.com/f08eb979-a452-4d3a-aa51-bafeb610b979%2Ffavicon.ico","type":"image/vnd.microsoft.icon","size":15406,"imageWidth":48,"imageHeight":48,"thumbnail":"https://cdn.glitch.com/f08eb979-a452-4d3a-aa51-bafeb610b979%2Ffavicon.ico","thumbnailWidth":48,"thumbnailHeight":48,"uuid":"IXmAyZhNBKhRhWb2"}
+{"uuid":"IXmAyZhNBKhRhWb2","deleted":true}
+{"name":"favicon_io.zip","date":"2021-06-11T13:15:24.075Z","url":"https://cdn.glitch.com/f08eb979-a452-4d3a-aa51-bafeb610b979%2Ffavicon_io.zip","type":"application/zip","size":395005,"thumbnail":"https://cdn.glitch.com/f08eb979-a452-4d3a-aa51-bafeb610b979%2Fthumbnails%2Ffavicon_io.zip","thumbnailWidth":210,"thumbnailHeight":210,"uuid":"aNsoyQ6DPPNk31i0"}
+{"uuid":"aNsoyQ6DPPNk31i0","deleted":true}

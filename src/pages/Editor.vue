@@ -49,7 +49,7 @@
           Save Changes
         </button>
         <button @click="toggleContentView">
-          {{this.view === 'content' ? 'Add/Remove/Reorder' : 'Modify Content'}}
+          {{view === 'content' ? 'Add/Remove/Reorder' : 'Modify Content'}}
         </button>
         <button @click="$router.push({name: 'Index'})">
           Preview Changes
