@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <div>
     <section 
       v-if="groupData.title"

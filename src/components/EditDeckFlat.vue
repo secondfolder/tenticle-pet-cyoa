@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <div :class="['choiceGroupFlatView', {top: level === 1}]">
     <div class="title">
       <h1 
