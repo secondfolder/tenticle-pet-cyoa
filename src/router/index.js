@@ -1,5 +1,4 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import Index from '../pages/Index.vue'
 import Share from '../pages/Share.vue'
 import Editor from '../pages/Editor.vue'
@@ -34,7 +33,7 @@ export const routes = [
     }
 ]
 
-export default VueRouter.createRouter({
-  history: VueRouter.createWebHashHistory(),
+export default new createRouter({
+  history: createWebHistory(),
   routes,
 })

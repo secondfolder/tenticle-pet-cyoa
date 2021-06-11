@@ -5,50 +5,9 @@ import App from './App.vue'
 import router from './router'
 import AsyncComputed from 'vue-async-computed'
 
-import deckData from './deckData.json'
-
-const localStorageDraftKey = 'unsavedDeckData'
 
 
-const app = createApp({
-  data () {
-    return {
-      deckData: this.loadDraft() || this.getDeckFromSource(),
-      deckDataModified: !!this.loadDraft(),
-      selectedIds: []
-    }
-  },
-  methods: {
-    getDeckFromSource () {
-      return JSON.parse(JSON.stringify(deckData))
-    },
-    loadDraft () {
-      return localStorage.getItem(localStorageDraftKey) &&
-        JSON.parse(localStorage.getItem(localStorageDraftKey))
-    },
-    saveDraft (draftDeckData) {
-      localStorage.setItem(localStorageDraftKey, draftDeckData)
-    },
-    discardDraft () {
-      this.deckData = this.getDeckFromSource()
-      this.$nextTick()
-        .then(() => {
-          localStorage.removeItem(localStorageDraftKey)
-          this.deckDataModified = false
-          this.$forceUpdate()
-        })
-    }
-  },
-  watch: {
-    deckData: {
-      handler (val) {
-        this.deckDataModified = true
-        this.saveDraft(JSON.stringify(val))
-      },
-      deep: true
-    }
-  }
-})
+const app = createApp(App)
 
 app.use(router)
 app.use(AsyncComputed)
