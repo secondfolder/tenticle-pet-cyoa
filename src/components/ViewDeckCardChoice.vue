@@ -122,11 +122,11 @@
     align-self: left;
   }
   .price.gain::before {
-    content: 'Gain:';
+    content: 'Gain: ';
     color: #217f21;
   }
   .price.cost::before {
-    content: 'Cost:';
+    content: 'Cost: ';
     color: #842323;
   }
   .horizontal {

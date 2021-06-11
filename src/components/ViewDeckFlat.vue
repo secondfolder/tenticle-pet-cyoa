@@ -145,11 +145,11 @@
     color: rgb(128, 128, 128);
   }
   .price.gain::before {
-    content: 'Gain:';
+    content: 'Gain: ';
     color: #217f21;
   }
   .price.cost::before {
-    content: 'Cost:';
+    content: 'Cost: ';
     color: #842323;
   }
   .disabled {

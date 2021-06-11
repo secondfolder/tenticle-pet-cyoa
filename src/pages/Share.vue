@@ -22,14 +22,18 @@
         />
       </div>
       <modal-box v-if="showShareDetails" @close="showShareDetails = false">
-        <h3 slot="header">Share Details</h3>
-        <div slot="body"> 
-          <button type="button" @click="copyUrl">Copy Link</button>
-          <div class="instructions">
-            (or if the button doesn't work, select and copy the below text)
+        <template v-slot:header>
+          <h3>Share Details</h3>
+        </template>
+        <template v-slot:body>
+          <div> 
+            <button type="button" @click="copyUrl">Copy Link</button>
+            <div class="instructions">
+              (or if the button doesn't work, select and copy the below text)
+            </div>
+            <input class="share-url" type="text" :value="shareUrl" @click="$event.target.select()" autofocus>
           </div>
-          <input class="share-url" type="text" :value="shareUrl" @click="$event.target.select()" autofocus>
-        </div>
+        </template>
       </modal-box>
     </main>
     <footer>
