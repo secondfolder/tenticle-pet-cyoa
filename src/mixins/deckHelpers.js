@@ -1,16 +1,11 @@
-var glitchAssets
-try {
-  if (process.env.PROJECT_NAME) {
-    glitchAssets = require('raw-loader!@/../.glitch-assets') // eslint-disable-line import/no-webpack-loader-syntax
-    glitchAssets = glitchAssets.split('\n').map(asset => {
-      try {
-        return JSON.parse(asset)
-      } catch (e) {
-      }
-    }).filter(asset => asset)
+import glitchAssets from '../../.glitch-assets'
+console.log(glitchAssets)
+glitchAssets = glitchAssets.split('\n').map(asset => {
+  try {
+    return JSON.parse(asset)
+  } catch (e) {
   }
-} catch (e) {
-}
+}).filter(asset => asset)
 export default {
   methods: {
     setSelection (choice, qty) {
@@ -153,20 +148,12 @@ export default {
     },
     imageSrc () {
       return this.getAssetUrl(this.deckData.img)
-    }
-  },
-  asyncComputed: {
-    async imageExists () {
+    },
+    imageExists () {
       const filename = this.deckData.img
       if (!filename) return false
-      if (this.glitchAssets) {
-        const isGlitchUrl = this.glitchAssets.find(entry => entry.name === this.deckData.img)
-        return !!isGlitchUrl
-      } else {
-        var res = await fetch(this.imageSrc)
-        if (filename !== this.deckData.img) return // if the filename has changed since we started checking if it exists then exit
-        return res.status === 200
-      }
+      const isGlitchUrl = this.glitchAssets.find(entry => entry.name === this.deckData.img)
+      return !!isGlitchUrl
     }
   }
 }
