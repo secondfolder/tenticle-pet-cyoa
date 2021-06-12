@@ -2,7 +2,8 @@
   "name": "tentacle-pet",
   "version": "0.1.0",
   "scripts": {
-    "start": "vite",
+    "start": "node stay-up-hack.js",
+    "start-old": "vite",
     "build": "vite build",
     "serve": "vite preview"
   },
@@ -20,7 +21,7 @@
   "engines": {
     "node": "12.x"
   },
-  "glitch": {
+  "glitch-disabled": {
     "projectType": "generated_static",
     "buildDirectory": "build"
   }
