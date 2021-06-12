@@ -1,5 +1,5 @@
 const execSync = require("child_process").execSync;
-execSync("npx http-server build -p 3000 -c-1");
+execSync("npx http-server build -p 3000 -c60 --gzip --proxy http://localhost:${PORT}?");
 
 process.on("beforeExit", code => {
   execSync("refresh");
