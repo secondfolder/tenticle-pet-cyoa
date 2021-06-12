@@ -4,8 +4,8 @@
   "scripts": {
     "start": "node stay-up-hack.js",
     "start-old": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
+    "build-old": "vite build",
+    "serve-old": "vite preview"
   },
   "dependencies": {
     "vue": "^3.1.1",
