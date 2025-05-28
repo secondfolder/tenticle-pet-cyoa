@@ -2,10 +2,9 @@
   "name": "tentacle-pet",
   "version": "0.1.0",
   "scripts": {
-    "start": "node stay-up-hack.js",
-    "start-old": "vite",
-    "build-old": "vite build",
-    "serve-old": "vite preview"
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "dependencies": {
     "@soerenmartius/vue3-clipboard": "^0.1.1",

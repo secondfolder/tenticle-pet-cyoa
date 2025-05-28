@@ -11,9 +11,6 @@ export default defineConfig({
       replacement: path.resolve(__dirname, './src')
     }
   },
-  build: {
-    outDir: "build"
-  },
   server: {
     strictPort: true,
     hmr: {
