@@ -4,12 +4,12 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "the-dick-deitys-inbred-cousin-cyoa",
+	"name": "tentacle-pet-cyoa",
 	"compatibility_date": "2025-05-28",
 	"assets": {
 		"not_found_handling": "single-page-application",
-    "html_handling": "drop-trailing-slash",
-    "directory": "./dist/"
+        "html_handling": "drop-trailing-slash",
+        "directory": "./dist/"
 	},
 	"observability": {
 		"enabled": true
